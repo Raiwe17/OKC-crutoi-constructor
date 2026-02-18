@@ -1,0 +1,5 @@
+{
+  "name": "OCK",
+  "description": "A visual website builder foundation with context-menu based element picking and a Blender-style 'stamp' placement mode.",
+  "requestFramePermissions": []
+}

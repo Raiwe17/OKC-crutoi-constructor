@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OKC – Почти финальная версия</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        overscroll-behavior: none;
+        user-select: none;
+      }
+      .hotspot {
+        border-style: dashed;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-slate-900 min-h-screen">
+    <main class="max-w-3xl mx-auto px-4 py-10">
+      <header class="mb-8 border-b border-slate-200 pb-4">
+        <h1 class="text-xl font-semibold tracking-tight">OKC · Почти финальный вариант</h1>
+        <p class="mt-1 text-sm text-slate-500">
+          Очень простой макет: показано, какие элементы будут кликабельными, но без анимаций и сложных эффектов.
+        </p>
+      </header>
+
+      <!-- Верхний блок с навигацией -->
+      <section class="mb-8 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div class="text-sm font-medium">Логотип / название</div>
+          <nav class="flex flex-wrap gap-3 text-xs text-slate-700">
+            <span class="px-2 py-1 border border-slate-300 rounded hotspot">Раздел 1</span>
+            <span class="px-2 py-1 border border-slate-300 rounded hotspot">Раздел 2</span>
+            <span class="px-2 py-1 border border-slate-300 rounded">Раздел 3</span>
+          </nav>
+        </div>
+      </section>
+
+      <!-- Основной CTA‑блок -->
+      <section class="mb-8 space-y-3">
+        <h2 class="text-lg font-semibold">Заголовок, который объясняет ценность OKC</h2>
+        <p class="text-sm text-slate-700">
+          Один абзац, раскрывающий, что именно пользователь сможет сделать с помощью сервиса.
+          Здесь можно перечислить главную задачу и ожидаемый результат.
+        </p>
+        <div class="flex flex-wrap gap-3 text-sm">
+          <button class="px-4 py-2 rounded border border-slate-400 bg-slate-100 hotspot">
+            Кнопка действия
+          </button>
+          <button class="px-4 py-2 rounded border border-slate-300">
+            Альтернативное действие
+          </button>
+        </div>
+        <p class="text-xs text-slate-500">
+          В финальной версии эти элементы будут реагировать на наведение и клик.
+        </p>
+      </section>
+
+      <!-- Простой список блоков/секций ниже -->
+      <section class="mb-8">
+        <h3 class="text-sm font-semibold mb-3">Секции страницы</h3>
+        <ul class="text-sm text-slate-700 space-y-2">
+          <li>
+            <span class="font-medium">Секция A.</span> Короткий текст или список.
+          </li>
+          <li>
+            <span class="font-medium">Секция B.</span> Простые блоки с описанием возможностей.
+          </li>
+          <li>
+            <span class="font-medium">Секция C.</span> Контакты или форма.
+          </li>
+        </ul>
+      </section>
+
+      <footer class="mt-10 pt-4 border-t border-slate-200 text-xs text-slate-500 space-y-1">
+        <p>Этот файл показывает почти финальную структуру: заголовок, навигация, кнопки, секции.</p>
+        <p>Дизайн намеренно упрощён, чтобы не отвлекать от логики и содержимого.</p>
+      </footer>
+    </main>
+  </body>
+</html>
+

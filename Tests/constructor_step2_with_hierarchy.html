@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OKC – Конструктор · Шаг 2 (иерархия + полотно)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        overscroll-behavior: none;
+        user-select: none;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col">
+    <!-- Верхняя панель (чуть богаче) -->
+    <header class="h-12 border-b border-slate-800 flex items-center justify-between px-4 bg-slate-950/95 backdrop-blur">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded-md bg-indigo-500/80 flex items-center justify-center text-[10px] font-bold">
+          OK
+        </div>
+        <span class="text-sm font-medium tracking-tight">OKC · Конструктор</span>
+        <span class="text-[11px] text-slate-500 border-l border-slate-800 pl-2">Шаг 2 · Иерархия</span>
+      </div>
+      <div class="flex items-center gap-2 text-[11px] text-slate-400">
+        <span>Проект: Черновик</span>
+        <span class="w-px h-4 bg-slate-800"></span>
+        <span>Автосохранение: выкл</span>
+      </div>
+    </header>
+
+    <!-- Основная область: слева иерархия, справа полотно -->
+    <main class="flex-1 flex bg-slate-950">
+      <!-- Иерархия -->
+      <aside class="w-64 border-r border-slate-800 bg-slate-950/90 flex flex-col">
+        <div class="h-9 border-b border-slate-800 flex items-center px-3 text-[11px] text-slate-400">
+          <span class="uppercase tracking-wide text-[10px]">Иерархия</span>
+        </div>
+        <div class="flex-1 p-3 text-[11px] text-slate-200 space-y-1">
+          <div class="font-medium text-slate-300 mb-1">Страница: Главная</div>
+          <ul class="space-y-1">
+            <li class="flex items-center gap-1">
+              <span class="text-slate-500">▾</span>
+              <span class="px-2 py-1 rounded bg-slate-900/80 border border-slate-700/80 flex-1">
+                Контейнер страницы
+              </span>
+            </li>
+            <li class="pl-5">
+              <div class="px-2 py-1 rounded bg-slate-900/40 border border-slate-800 flex justify-between">
+                <span>Хедер</span>
+                <span class="text-slate-500">div</span>
+              </div>
+            </li>
+            <li class="pl-5">
+              <div class="px-2 py-1 rounded bg-slate-900/40 border border-slate-800 flex justify-between">
+                <span>Основной блок</span>
+                <span class="text-slate-500">section</span>
+              </div>
+            </li>
+            <li class="pl-5">
+              <div class="px-2 py-1 rounded bg-slate-900/40 border border-slate-800 flex justify-between">
+                <span>Карточка 1</span>
+                <span class="text-slate-500">div</span>
+              </div>
+            </li>
+            <li class="pl-5">
+              <div class="px-2 py-1 rounded bg-slate-900/40 border border-slate-800 flex justify-between">
+                <span>Карточка 2</span>
+                <span class="text-slate-500">div</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Полотно -->
+      <section class="flex-1 flex items-center justify-center">
+        <div class="w-full max-w-5xl aspect-[16/9] border border-slate-800/80 rounded-xl bg-slate-900/80 shadow-[0_0_0_1px_rgba(15,23,42,0.8)]">
+          <div class="h-8 border-b border-slate-800/80 px-4 flex items-center justify-between text-[11px] text-slate-400">
+            <span>Полотно 1280 × 720</span>
+            <span>Иерархия слева соответствует элементам здесь</span>
+          </div>
+          <div class="h-full p-6">
+            <div class="w-full h-full rounded-lg border border-dashed border-slate-700/80 bg-slate-950/60 p-5 space-y-4">
+              <div class="h-8 rounded border border-slate-700/80 bg-slate-900/80 flex items-center px-3 text-[11px] text-slate-300">
+                Хедер (макет)
+              </div>
+              <div class="h-20 rounded border border-slate-700/80 bg-slate-900/80 flex items-center px-3 text-[11px] text-slate-300">
+                Основной блок
+              </div>
+              <div class="grid grid-cols-3 gap-3 text-[11px]">
+                <div class="h-16 rounded border border-slate-700/80 bg-slate-900/80 flex items-center justify-center text-slate-400">
+                  Карточка 1
+                </div>
+                <div class="h-16 rounded border border-slate-700/80 bg-slate-900/80 flex items-center justify-center text-slate-400">
+                  Карточка 2
+                </div>
+                <div class="h-16 rounded border border-slate-700/80 bg-slate-900/80 flex items-center justify-center text-slate-400">
+                  Карточка 3
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+

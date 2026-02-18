@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OKC – Конструктор · Шаг 1 (только полотно)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        overscroll-behavior: none;
+        user-select: none;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col">
+    <!-- Верхняя панель (минимальная версия) -->
+    <header class="h-12 border-b border-slate-800 flex items-center justify-between px-4 bg-slate-950/95 backdrop-blur">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded-md bg-indigo-500/80 flex items-center justify-center text-[10px] font-bold">
+          OK
+        </div>
+        <span class="text-sm font-medium tracking-tight">OKC · Конструктор</span>
+      </div>
+      <div class="flex items-center gap-3 text-[11px] text-slate-400">
+        <span>Шаг 1 · Только полотно</span>
+      </div>
+    </header>
+
+    <!-- Основная область: только полотно по центру -->
+    <main class="flex-1 flex items-center justify-center bg-slate-950">
+      <div class="w-full max-w-5xl aspect-[16/9] border border-slate-800/80 rounded-xl bg-slate-900/80 shadow-[0_0_0_1px_rgba(15,23,42,0.8)]">
+        <div class="h-8 border-b border-slate-800/80 px-4 flex items-center justify-between text-[11px] text-slate-400">
+          <span>Полотно 1280 × 720</span>
+          <span>Здесь будут элементы интерфейса</span>
+        </div>
+        <div class="h-full p-6">
+          <div class="w-full h-full rounded-lg border border-dashed border-slate-700/80 bg-slate-900/80 flex items-center justify-center">
+            <div class="text-center text-[12px] text-slate-500 space-y-1">
+              <p>Пустое полотно</p>
+              <p class="text-[11px] text-slate-600">
+                На этом шаге показываем только область, где будут располагаться элементы.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
